@@ -1,0 +1,488 @@
+@import './responsive.css';
+
+* {
+    outline: none;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+input[type="button"],
+button {
+    background: #0f4e9b;
+    border: 0;
+    color: #fff;
+    padding: 5px 10px;
+}
+
+p {
+    margin: 0;
+}
+
+ul, ol, li {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+
+th {
+    font-weight: 600;
+}
+
+
+/*** HEader ***/
+header {
+    padding: 0 36px;
+}
+
+.navbar .navbar-brand {
+    max-width: 240px;
+}
+
+.navbar .navbar-brand img {
+    max-width: 100%;
+}
+
+input {
+    outline: none;
+}
+
+.search-button {
+    background: none;
+    border: 0;
+}
+
+.search-button i {
+    /*background: url('../images/search.svg') no-repeat;*/
+    width: 24px;
+    height: 18px;
+    display: block;
+    background-size: cover;
+}
+
+.top-menu {
+    border-bottom: 2px solid #0f4e9b;
+    max-width: 340px;
+}
+
+.custom-search {
+    border: 0;
+}
+
+.language-dropdown .dropdown-toggle::after {
+    vertical-align: 0.255em;
+}
+
+.language-dropdown .dropdown-menu {
+    border: 0;
+    border-top: 2px solid #0f4e9b;
+}
+
+.navbar {
+    padding: 0;
+}
+
+.menu-divider {
+    border-bottom: 2px solid #f8f9fa;
+}
+
+/*** Footer ***/
+footer {
+    border-top: 24px solid #0f4e9b;
+}
+
+footer .footer-search {
+    width: 100%;
+    max-width: 360px;
+}
+
+footer .footer-menu {
+    width: 100%;
+}
+
+.footer-heading {
+    color: #0f4e9b;
+    font-weight: 600;
+    font-size: 24px;
+    margin: 0 0 15px;
+}
+
+footer input[type="button"] {
+    padding: 10px 15px;
+    margin: 15px 0 0;
+    border-radius: 5px;
+}
+
+.footer-bottom {
+    background-color: #0f4e9b !important;
+}
+
+.footer-bottom i {
+    color: #fff;
+}
+
+/*** Banner ***/
+.banner {
+    position: relative;
+    width: 100%;
+    height: 240px;
+    /* istediğiniz yüksekliği buradan ayarlayabilirsiniz */
+    background-image: url('https://www.an-ka.com/productimages/108083/big/ex20.jpg');
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+}
+
+.banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 0, 0, 0.5);
+    /* Kırmızı renkte %50 şeffaflıkla overlay */
+}
+
+.banner-text {
+    position: relative;
+    margin: 0 0 0 36px;
+    color: #fff;
+    font-size: 24px;
+    /* Yazı boyutunu buradan ayarlayabilirsiniz */
+    font-weight: bold;
+    font-size: 50px;
+}
+
+/*** Boxes ***/
+section {
+    margin-bottom: 100px;
+}
+
+.custom-box {
+    border: 1px solid #e0e0e0;
+    margin: 0 18px;
+    /* 36px boşluğu iki kutu arasına bölmek için 18px olarak ayarlandı */
+    flex: 1;
+    /* Boxların genişliği otomatik olarak artıp azalsın diye */
+    -webkit-box-shadow: 0px 3px 2px 0px rgba(0, 0, 0, 0.50);
+    -moz-box-shadow: 0px 3px 2px 0px rgba(0, 0, 0, 0.50);
+    box-shadow: 0px 3px 2px 0px rgba(0, 0, 0, 0.50);
+    border-radius: 12px;
+}
+
+.custom-box-desc {
+    padding: 20px;
+}
+
+.custom-box img {
+    width: 100%;
+    /* Görselin tam genişlikte olmasını sağlar */
+    height: auto;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.custom-box-title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/** Hakkında **/
+.about-images img {
+    height: 400px;
+    max-width: 100%;
+    border-radius: 16px;
+}
+
+.about p {
+    margin-bottom: 30px;
+}
+
+/** Swiper **/
+
+.slider{
+    margin:120px 0;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider-button{
+    height: 100%;
+    background: #fff;
+    top: 0;
+    padding: 0 25px !important;
+    opacity: 1 !important;
+    margin: 0;
+}
+
+.swiper-button-prev{
+    left:0;
+}
+
+.swiper-button-next {
+    right: 0;
+}
+
+/** Products **/
+
+.product-card {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);  /* Hover üzerinde gölgeyi belirginleştir */
+    border-radius: 20px;
+    margin-bottom: 48px;
+}
+
+.product-card img {
+    border-radius: 20px 20px 0 0;
+}
+
+.btn-outline-primary {
+    color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+.product-card button{
+    width: 48%;
+    border-radius: 28px;
+}
+
+.btn-primary {
+    background-color: #0d6efd;
+}
+
+.related-header {
+    display: flex;
+    align-items: center;
+}
+
+.related-border {
+    height: 2px;
+    flex-grow: 1;
+    background-color: #0d6efd;
+    margin-left: 30px;
+}
+
+.related-header h2{
+    color:#0d6efd;
+}
+
+.card-body ul {
+    margin-bottom: 0.75rem;
+}
+
+.images-section a{
+    height: 320px;
+    display: block;
+}
+
+.images-section img{
+    width: 100%;
+    height: 100%;
+    border-radius: 32px;
+}
+
+/** product detail **/
+.product-detail {
+
+}
+
+.product-detail .product-images{
+    height: 500px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+    border-radius: 32px;
+    padding:20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-detail .product-images img{
+    border-radius: 32px;
+    max-width: 100%;
+    height: 100%;
+}
+
+.product-detail--detail h2{
+    color:#0d6efd;
+}
+
+.product-detail--detail p {
+    margin:32px 0;
+}
+
+.product-detail--detail .price{
+    font-size:48px;
+    font-weight: 600;
+}
+
+.product-detail--detail__margin{
+    margin-left: 60px;
+}
+
+.product-detail .bank-card img{
+    max-height: 10px;
+}
+
+.product-detail .buttons {
+    margin-top: 6rem !important;
+}
+
+/** Rating **/
+
+.stars{
+    height: 36px;
+    display: flex;
+}
+
+.rating { 
+    border: none;
+    float: left;
+  }
+  
+  .rating > input { display: none; } 
+  .rating > label:before { 
+    margin: 5px;
+    font-size: 0.5;
+    font-family: FontAwesome;
+    display: inline-block;
+    content: "\f005";
+  }
+  
+  .rating > .half:before { 
+    content: "\f089";
+    position: absolute;
+  }
+  
+  .rating > label { 
+    color: #ddd; 
+   float: right; 
+  }
+  
+  /***** CSS Magic to Highlight Stars on Hover *****/
+  
+  .rating > input:checked ~ label, /* show gold star when clicked */
+  .rating:not(:checked) > label:hover, /* hover current star */
+  .rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+  
+  .rating > input:checked + label:hover, /* hover current star when changing rating */
+  .rating > input:checked ~ label:hover,
+  .rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+  .rating > input:checked ~ label:hover ~ label { color: #FFED85;  } 
+
+
+  /** Product Tab **/
+  .product-tab-container {
+    border-top: 24px solid #0f4e9b;
+    margin-top:8rem;
+  }
+
+.product-tab-container .nav-tabs {
+    border:0;
+}
+
+.product-tab-container .nav-tabs .nav-item {
+    margin-right: 20px;
+}
+
+.product-tab-container .nav-tabs .nav-link{
+    border:0;
+    font-size:18px;
+    border-radius: 8px;
+    border:1px solid #ccc;
+}
+
+.product-tab-container .nav-tabs .nav-link.active{
+    color:#0d6efd;
+}
+
+.product-tab-container .tab-content p {
+    margin-bottom: 1.25rem;
+}
+
+.product-tab-container .tab-content td, .product-tab-container .tab-content th {
+    border-top:0;
+    border-bottom:1px solid #dee2e6;
+}
+
+/** modal **/
+.basket-modal{
+    max-width: 800px;
+}
+
+.basket-modal input, .basket-modal textarea{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+    border:0;
+    border-radius: 8px;
+    height: 40px;
+    color:#0d6efd;
+}
+
+.basket-modal input::placeholder {
+    color:#0d6efd;
+}
+
+.basket-modal textarea {
+    height: 200px;
+}
+
+.basket-modal .modal-header{
+    border:0;
+    display: block;
+}
+
+.basket-modal .modal-header h5 {
+    display: block;
+    color:#0d6efd;
+    font-size: 24px;
+    display: block;
+}
+
+.basket-modal .modal-header p {
+    color:#0d6efd;
+    font-size: 14px;
+}
+
+.basket-modal .modal-images{
+    height: 250px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 32px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.basket-modal .modal-images img{
+    border-radius: 32px;
+    max-width: 100%;
+    height: 100%;
+}
+
+.basket-modal .modal-content{
+    border-radius: 16px;
+    padding: 24px;
+}
