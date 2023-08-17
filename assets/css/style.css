@@ -36,9 +36,9 @@ th {
 }
 
 
-/*** HEader ***/
+/*** Header ***/
 header {
-    padding: 0 36px;
+    padding: 0 40px;
 }
 
 .navbar .navbar-brand {
@@ -56,6 +56,8 @@ input {
 .search-button {
     background: none;
     border: 0;
+    padding-top: 10px;
+    color: #0f4e9b;
 }
 
 .search-button i {
@@ -92,9 +94,57 @@ input {
     border-bottom: 2px solid #f8f9fa;
 }
 
+header .header-menu-wrapper {
+    align-items: baseline;
+    gap: 10px;
+}
+
+header .header-menu-wrapper .nav-link {
+    font-weight: 700;
+    font-size: 14px;
+    color: #000;
+}
+
+header .header-menu-wrapper .nav-link:hover {
+    color: #0f4e9b;
+}
+
+header .header-menu-wrapper .nav-item.active .nav-link{
+    font-weight: 700;
+    color: #0f4e9b;
+}
+
+header .header-right-links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header .header-right-links .login-signup {
+    padding: 6px;
+}
+
+header .header-right-links .social-links {
+    display: flex;
+    column-gap: 6px;
+}
+
+header .header-right-links .social-links a {
+    color: #0f4e9b;
+}
+
+
 /*** Footer ***/
 footer {
     border-top: 24px solid #0f4e9b;
+}
+
+footer .footer {
+    padding: 50px 40px;
+}
+
+footer .footer-logo img {
+    width: 100%;
 }
 
 footer .footer-search {

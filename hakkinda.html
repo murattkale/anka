@@ -1,313 +1,469 @@
 <!DOCTYPE html>
 <html lang="tr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navigasyon Çubuğu</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hakkımızda</title>
 
     <!-- Bootstrap CSS Bağlantısı -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
 
-    <link href="assets/css/style.css" rel="stylesheet">
-    <style>
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <style></style>
+  </head>
 
-    </style>
-</head>
-
-<body>
+  <body>
     <header>
-        <div class="container-fuild">
-            <nav class="navbar navbar-expand-lg navbar-light justify-content-between">
-                <div class="d-flex w-auto">
-                    <!-- Logo -->
-                    <a class="navbar-brand m-auto" href="#">
-                        <img src="assets/images/logo.png" alt="Logo">
-                    </a>
+      <div class="container-fuild">
+        <nav
+          class="navbar navbar-expand-lg navbar-light justify-content-between"
+        >
+          <div class="d-flex w-auto">
+            <!-- Logo -->
+            <a class="navbar-brand m-auto" href="#">
+              <img src="assets/images/logo.png" alt="Logo" />
+            </a>
+          </div>
+
+          <div
+            class="d-flex w-auto justify-content-end flex-column align-items-end gap-2"
+          >
+            <!-- Üst Bölüm: Arama ve Dil Seçenekleri -->
+            <div class="d-flex justify-content-end align-items-center top-menu">
+              <!-- Arama Kutusu -->
+              <div class="input-group mr-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text search-button"
+                    ><i class="fas fa-search"></i
+                  ></span>
                 </div>
-        
-                <div class="d-flex w-auto justify-content-end flex-column align-items-end">
-                    <!-- Üst Bölüm: Arama ve Dil Seçenekleri -->
-                    <div class="d-flex justify-content-end align-items-center top-menu">
-                        <!-- Arama Kutusu -->
-                        <div class="input-group mr-3">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text search-button"><i class="fas fa-search"></i></span>
-                            </div>
-                            <input type="text" class="form-control custom-search" placeholder="Ürün Arama">
-                        </div>
-        
-                        <!-- Dil Seçenekleri -->
-                        <div class="dropdown language-dropdown">
-                            <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <img src="assets/images/english.png" alt="English" style="width: 40px;"> 
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#"><img src="assets/images/english.png" style="width: 40px;"></a>
-                                <a class="dropdown-item" href="#"><img src="assets/images/turkish.jpg" alt="Türkçe" style="width: 40px;"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Menü Elemanları -->
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">Ana Sayfa</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Hakkımızda</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">İletişim</a>
-                            </li>
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">Ana Sayfa</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Hakkımızda</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">İletişim</a>
-                            </li>
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">Ana Sayfa</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Hakkımızda</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">İletişim</a>
-                            </li>
-                        </ul>
-                    </div>
+                <input
+                  type="text"
+                  class="form-control custom-search"
+                  placeholder="Ürün Arama"
+                />
+              </div>
+
+              <!-- Dil Seçenekleri -->
+              <div class="dropdown language-dropdown">
+                <a
+                  class="dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <img
+                    src="assets/images/english.png"
+                    alt="English"
+                    style="width: 40px"
+                  />
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#"
+                    ><img src="assets/images/english.png" style="width: 40px"
+                  /></a>
+                  <a class="dropdown-item" href="#"
+                    ><img
+                      src="assets/images/turkish.jpg"
+                      alt="Türkçe"
+                      style="width: 40px"
+                  /></a>
                 </div>
-            </nav>
-        </div>
+              </div>
+            </div>
+            <!-- Menü Elemanları -->
+            <div
+              class="collapse navbar-collapse header-menu-wrapper"
+              id="navbarNav"
+            >
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link text-uppercase" href="#">Kurumsal</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-uppercase" href="#">Ürünlerimiz</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-uppercase" href="#"
+                    >Müşteri Çözümleri</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-uppercase" href="#">Temsilcilikler</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-uppercase" href="#"
+                    >Faaliyetlerimiz</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-uppercase" href="#"
+                    >Teknik Servis & Destek</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-uppercase" href="#">İletişim</a>
+                </li>
+              </ul>
+              <div class="header-right-links">
+                <div class="login-signup">
+                  <a href="#">Giriş</a>
+                  <span>/</span>
+                  <a href="#">Kayıt</a>
+                </div>
+                <div class="social-links">
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
     </header>
     <section>
-        <div class="banner">
-            <div class="banner-overlay"></div>
-            <div class="banner-text">FRU Global Yeni Temsiclik<br>Hakkında</div>
+      <div class="banner">
+        <div class="banner-overlay"></div>
+        <div class="banner-text">FRU Global Yeni Temsiclik<br />Hakkında</div>
+      </div>
+
+      <div class="container-xxl mt-5 mb-5 px-5 about">
+        <div class="col-12">
+          <div class="row">
+            <div class="col-4">
+              <div
+                class="about-images d-flex align-items-center justify-content-center"
+              >
+                <img
+                  src="https://cdn.evrimagaci.org/BI60eYycd0JKlZZErXTCA1GhVKE=/evrimagaci.org%2Fpublic%2Fcontent_media%2F774d9f8ebdcf1b5982caf28ba6e74fc5.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="col-8">
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged. It was
+                popularised in the 1960s with the release of Letraset sheets
+                containing Lorem Ipsum passages, and more recently with desktop
+                publishing software like Aldus PageMaker including versions of
+                Lorem Ipsum.
+              </p>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged. It was
+                popularised in the 1960s with the release of Letraset sheets
+                containing Lorem Ipsum passages, and more recently with desktop
+                publishing software like Aldus PageMaker including versions of
+                Lorem Ipsum.
+              </p>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged. It was
+                popularised in the 1960s with the release of Letraset sheets
+                containing Lorem Ipsum passages, and more recently with desktop
+                publishing software like Aldus PageMaker including versions of
+                Lorem Ipsum.
+              </p>
+            </div>
+          </div>
         </div>
 
-        <div class="container-xxl mt-5 mb-5 px-5 about">
-            <div class="col-12">
-                <div class="row">
-                    <div class="col-4">
-                        <div class="about-images d-flex align-items-center justify-content-center">
-                            <img src="https://cdn.evrimagaci.org/BI60eYycd0JKlZZErXTCA1GhVKE=/evrimagaci.org%2Fpublic%2Fcontent_media%2F774d9f8ebdcf1b5982caf28ba6e74fc5.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="col-8">
-                        <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                        </p>
-                        <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                        </p>
-                        <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                        </p>
-                    </div>
-                </div>
+        <div class="slider">
+          <!-- Swiper -->
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="https://iasbh.tmgrup.com.tr/fc3d31/800/420/0/0/752/395?u=https://isbh.tmgrup.com.tr/sbh/2019/07/18/ilac-alirken-nelere-dikkat-etmek-gerekir-1563440783215.jpg"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="https://www.eczacidergisi.com.tr/wp-content/uploads/2023/01/3349028_810x458.jpg"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="https://iasbh.tmgrup.com.tr/fc3d31/800/420/0/0/752/395?u=https://isbh.tmgrup.com.tr/sbh/2019/07/18/ilac-alirken-nelere-dikkat-etmek-gerekir-1563440783215.jpg"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="https://www.eczacidergisi.com.tr/wp-content/uploads/2023/01/3349028_810x458.jpg"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="https://iasbh.tmgrup.com.tr/fc3d31/800/420/0/0/752/395?u=https://isbh.tmgrup.com.tr/sbh/2019/07/18/ilac-alirken-nelere-dikkat-etmek-gerekir-1563440783215.jpg"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="https://www.eczacidergisi.com.tr/wp-content/uploads/2023/01/3349028_810x458.jpg"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="https://iasbh.tmgrup.com.tr/fc3d31/800/420/0/0/752/395?u=https://isbh.tmgrup.com.tr/sbh/2019/07/18/ilac-alirken-nelere-dikkat-etmek-gerekir-1563440783215.jpg"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="https://www.eczacidergisi.com.tr/wp-content/uploads/2023/01/3349028_810x458.jpg"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="https://iasbh.tmgrup.com.tr/fc3d31/800/420/0/0/752/395?u=https://isbh.tmgrup.com.tr/sbh/2019/07/18/ilac-alirken-nelere-dikkat-etmek-gerekir-1563440783215.jpg"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="https://www.eczacidergisi.com.tr/wp-content/uploads/2023/01/3349028_810x458.jpg"
+                />
+              </div>
             </div>
-
-            <div class="slider">
-                <!-- Swiper -->
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="https://iasbh.tmgrup.com.tr/fc3d31/800/420/0/0/752/395?u=https://isbh.tmgrup.com.tr/sbh/2019/07/18/ilac-alirken-nelere-dikkat-etmek-gerekir-1563440783215.jpg"></div>
-                        <div class="swiper-slide"><img src="https://www.eczacidergisi.com.tr/wp-content/uploads/2023/01/3349028_810x458.jpg"></div>
-                        <div class="swiper-slide"><img src="https://iasbh.tmgrup.com.tr/fc3d31/800/420/0/0/752/395?u=https://isbh.tmgrup.com.tr/sbh/2019/07/18/ilac-alirken-nelere-dikkat-etmek-gerekir-1563440783215.jpg"></div>
-                        <div class="swiper-slide"><img src="https://www.eczacidergisi.com.tr/wp-content/uploads/2023/01/3349028_810x458.jpg"></div>
-                        <div class="swiper-slide"><img src="https://iasbh.tmgrup.com.tr/fc3d31/800/420/0/0/752/395?u=https://isbh.tmgrup.com.tr/sbh/2019/07/18/ilac-alirken-nelere-dikkat-etmek-gerekir-1563440783215.jpg"></div>
-                        <div class="swiper-slide"><img src="https://www.eczacidergisi.com.tr/wp-content/uploads/2023/01/3349028_810x458.jpg"></div>
-                        <div class="swiper-slide"><img src="https://iasbh.tmgrup.com.tr/fc3d31/800/420/0/0/752/395?u=https://isbh.tmgrup.com.tr/sbh/2019/07/18/ilac-alirken-nelere-dikkat-etmek-gerekir-1563440783215.jpg"></div>
-                        <div class="swiper-slide"><img src="https://www.eczacidergisi.com.tr/wp-content/uploads/2023/01/3349028_810x458.jpg"></div>
-                        <div class="swiper-slide"><img src="https://iasbh.tmgrup.com.tr/fc3d31/800/420/0/0/752/395?u=https://isbh.tmgrup.com.tr/sbh/2019/07/18/ilac-alirken-nelere-dikkat-etmek-gerekir-1563440783215.jpg"></div>
-                        <div class="swiper-slide"><img src="https://www.eczacidergisi.com.tr/wp-content/uploads/2023/01/3349028_810x458.jpg"></div>
-                    </div>
-                    <div class="swiper-button-prev slider-button"></div>
-                    <div class="swiper-button-next slider-button"></div>
-                </div>
-            </div>
-
-            <div class="products">
-                <div class="container-fuild px-5 my-5">
-                    <div class="related-header mb-4">
-                        <h2>İlişkili Ürünler</h2>
-                        <div class="related-border"></div>
-                    </div>
-                
-                    <div class="row gx-3">
-                        <!-- Örnek bir ürün kartı. Daha fazla kart için bu div bloğunu kopyalayabilirsiniz. -->
-                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                            <div class="card product-card shadow-sm">
-                                <img src="https://via.placeholder.com/300" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Ürün Adı</h5>
-                                    <div class="d-flex justify-content-between">
-                                        <button class="btn btn-outline-primary">Detay</button>
-                                        <button class="btn btn-primary">Satın Al</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                            <div class="card product-card shadow-sm">
-                                <img src="https://via.placeholder.com/300" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Ürün Adı</h5>
-                                    <div class="d-flex justify-content-between">
-                                        <button class="btn btn-outline-primary">Detay</button>
-                                        <button class="btn btn-primary">Satın Al</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                            <div class="card product-card shadow-sm">
-                                <img src="https://via.placeholder.com/300" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Ürün Adı</h5>
-                                    <div class="d-flex justify-content-between">
-                                        <button class="btn btn-outline-primary">Detay</button>
-                                        <button class="btn btn-primary">Satın Al</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                            <div class="card product-card shadow-sm">
-                                <img src="https://via.placeholder.com/300" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Ürün Adı</h5>
-                                    <div class="d-flex justify-content-between">
-                                        <button class="btn btn-outline-primary">Detay</button>
-                                        <button class="btn btn-primary">Satın Al</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Buraya kadar olan div bloğunu kopyalayın -->
-                    </div>
-                </div>
-            </div>
+            <div class="swiper-button-prev slider-button"></div>
+            <div class="swiper-button-next slider-button"></div>
+          </div>
         </div>
 
+        <div class="products">
+          <div class="container-fuild px-5 my-5">
+            <div class="related-header mb-4">
+              <h2>İlişkili Ürünler</h2>
+              <div class="related-border"></div>
+            </div>
+
+            <div class="row gx-3">
+              <!-- Örnek bir ürün kartı. Daha fazla kart için bu div bloğunu kopyalayabilirsiniz. -->
+              <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="card product-card shadow-sm">
+                  <img
+                    src="https://via.placeholder.com/300"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Ürün Adı</h5>
+                    <div class="d-flex justify-content-between">
+                      <button class="btn btn-outline-primary">Detay</button>
+                      <button class="btn btn-primary">Satın Al</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="card product-card shadow-sm">
+                  <img
+                    src="https://via.placeholder.com/300"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Ürün Adı</h5>
+                    <div class="d-flex justify-content-between">
+                      <button class="btn btn-outline-primary">Detay</button>
+                      <button class="btn btn-primary">Satın Al</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="card product-card shadow-sm">
+                  <img
+                    src="https://via.placeholder.com/300"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Ürün Adı</h5>
+                    <div class="d-flex justify-content-between">
+                      <button class="btn btn-outline-primary">Detay</button>
+                      <button class="btn btn-primary">Satın Al</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="card product-card shadow-sm">
+                  <img
+                    src="https://via.placeholder.com/300"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Ürün Adı</h5>
+                    <div class="d-flex justify-content-between">
+                      <button class="btn btn-outline-primary">Detay</button>
+                      <button class="btn btn-primary">Satın Al</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Buraya kadar olan div bloğunu kopyalayın -->
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <footer>
+      <div class="container-fluid footer">
+        <div class="row">
+          <!-- Logo alanı -->
 
-        <div class="container-fluid bg-light py-4 px-5">
-           
-                <div class="row">
-                    <!-- Logo alanı -->
-                    
-                    <div class="col-md-12 col-sm-12 col-xs-12 col-lg-3 footer-logo">
-                        <img src="assets/images/logo.png" alt="Logo" class="img-fluid">
-                    </div>
-        
-                    <!-- Menü Alanı -->
-                    <div class="col-lg-6 col-md-9 col-sm-12 col-xs-12">
-                        <div class="row">
-                            <div class="d-flex align-items-center justify-content-around footer-menu">
-                                <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
-                                    <div class="row">
-                                        <!-- Kurumsal menü -->
-                                        <div class="col-lg-3  col-sm-12 col-xs-12">
-                                            <h5 class="footer-heading">Kurumsal</h5>
-                                            <ul class="list-unstyled">
-                                                <li><a href="#">Alt Başlık 1</a></li>
-                                                <li><a href="#">Alt Başlık 1</a></li>
-                                                <li><a href="#">Alt Başlık 1</a></li>
-                                                <li><a href="#">Alt Başlık 1</a></li>
-                                                <li><a href="#">Alt Başlık 1</a></li>
-                                            </ul>
-                                        </div>
-                    
-                                        <!-- İş birliliği menü -->
-                                        <div class="col-lg-3 col-sm-12 col-xs-12">
-                                            <h5 class="footer-heading">İş Birliliği</h5>
-                                            <ul class="list-unstyled">
-                                                <li><a href="#">Alt Başlık 1</a></li>
-                                                <li><a href="#">Alt Başlık 1</a></li>
-                                                <li><a href="#">Alt Başlık 1</a></li>
-                                                <li><a href="#">Alt Başlık 1</a></li>
-                                                <li><a href="#">Alt Başlık 1</a></li>
-                                            </ul>
-                                        </div>
-                    
-                                        <!-- İletişim bilgileri -->
-                                        <div class="col-lg-6 col-sm-12 col-xs-12">
-                                            <ul class="list-unstyled">
-                                                <li class="footer-heading">Telefon: +90 123 456 78 90</li>
-                                                <li>Adres: Sokak Adı, Şehir, Ülke</li>
-                                                <li>Email: <a href="mailto:ornek@domain.com">ornek@domain.com</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <!-- Arama alanı -->
-                    <div class="col--lg-3 col-md-3 col-sm-12 col-xs-12 d-flex align-items-end flex-column">
-                        <div class="footer-search">
-                            <h6 class="footer-heading">BÜLTENE ABONE OL</h6>
-                            <input type="search" class="form-control" placeholder="Arama...">
-                            <input type="button" value="Kaydet">
-                        </div>
-                    </div>
-                </div>
-            
-        </div>  
+          <div class="col-md-12 col-sm-12 col-xs-12 col-lg-3 footer-logo">
+            <img src="assets/images/logo.png" alt="Logo" class="img-fluid" />
+          </div>
 
-        <!-- Footer Bottom -->
-        <div class="bg-primary text-white py-3 footer-bottom">
-            <div class="container">
-                <div class="d-flex justify-content-between align-items-start">
-                    <div>
-                        <a href="#" class="mx-2"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="mx-2"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="mx-2"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="mx-2"><i class="fab fa-instagram"></i></a>
+          <!-- Menü Alanı -->
+          <div class="col-lg-6 col-md-9 col-sm-12 col-xs-12">
+            <div class="row">
+              <div class="footer-menu">
+                <div class="col-md-12">
+                  <div class="row w-100 justify-content-evenly">
+                    <!-- Kurumsal menü -->
+                    <div class="col-lg-3 col-sm-12 col-xs-12">
+                      <h5 class="footer-heading">KURUMSAL</h5>
+                      <ul class="list-unstyled">
+                        <li><a href="#">Yeni Üyelik</a></li>
+                        <li><a href="#">Şifre Hatırlatma</a></li>
+                        <li><a href="#">Sepetim</a></li>
+                        <li><a href="#">İletişim</a></li>
+                        <li><a href="#">Gizlilik Bildirimi</a></li>
+                      </ul>
                     </div>
-                    <div>
-                        <p>Copyright Anka</p>
+
+                    <!-- İş birliliği menü -->
+                    <div class="col-lg-3 col-sm-12 col-xs-12">
+                      <h5 class="footer-heading">İş Etiği ve KVKK</h5>
+                      <ul class="list-unstyled">
+                        <li><a href="#">Üyelik Giriş</a></li>
+                        <li><a href="#">Kullanıcı Bilgilerim</a></li>
+                        <li><a href="/hakkinda.html">Hakkımızda</a></li>
+                        <li><a href="#">Satış Sözleşmesi</a></li>
+                        <li><a href="#">Yasal Haklar</a></li>
+                      </ul>
                     </div>
+
+                    <!-- İletişim bilgileri -->
+                    <div class="col-lg-4 col-sm-12 col-xs-12">
+                      <ul class="list-unstyled">
+                        <li class="footer-heading">TEL: +90 123 456 78 90</li>
+                        <li>
+                          <span class="fw-bold">Merkez:</span> Gayrettepe Mah.
+                          Çimen Sok. Girne Apt. No 2/10 34349 Beşiktaş/İstanbul
+                        </li>
+                        <li>
+                          Servis İstasyonu / Kollektif Çalışma Alanı: İstasyon
+                          Mah. Yarış Çıkmazı Sok. No: 1/60 Tuzla/İstanbul
+                        </li>
+                        <li>
+                          Email:
+                          <a href="mailto:ornek@domain.com">ornek@domain.com</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
-        </div>
+          </div>
 
+          <!-- Arama alanı -->
+          <div
+            class="col--lg-3 col-md-3 col-sm-12 col-xs-12 d-flex align-items-end flex-column"
+          >
+            <div class="footer-search">
+              <h6 class="footer-heading">BÜLTENE ABONE OL</h6>
+              <input
+                type="search"
+                class="form-control"
+                placeholder="Arama..."
+              />
+              <input type="button" value="Kaydet" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="bg-primary text-white py-3 footer-bottom">
+        <div class="container">
+          <div class="d-flex justify-content-between align-items-start">
+            <div>
+              <a href="#" class="mx-2"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="mx-2"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="mx-2"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" class="mx-2"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div>
+              <p>Copyright Anka</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
 
-<!-- Bootstrap, Font Awesome ve jQuery Bağlantıları -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-  <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- Bootstrap, Font Awesome ve jQuery Bağlantıları -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 4,
-      spaceBetween: 0,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev'
-    }
-    });
-  </script>
-
-</body>
-
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 4,
+        spaceBetween: 0,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
 </html>
