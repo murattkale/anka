@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ürünlerimiz</title>
+
+    <!-- Bootstrap CSS Bağlantısı -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <!-- Owl Carousel -->
+    <link
+      rel="stylesheet"
+      href="/assets/lib/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/assets/lib/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.theme.default.min.css"
+    />
+
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <style></style>
+  </head>
+
+  <body>
+    <header>
+      <div class="container-fuild">
+        <nav
+          class="header-nav-wrapper navbar navbar-expand-lg navbar-light justify-content-between"
+        >
+          <div class="header-logo-wrapper d-flex w-auto">
+            <!-- Logo -->
+            <a class="navbar-brand m-auto" href="#">
+              <img src="assets/images/logo.png" alt="Logo" />
+            </a>
+          </div>
+          <div class="mobile-menu-wrapper">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Menü Elemanları -->
+            <div
+              class="collapse navbar-collapse header-menu-wrapper"
+              id="navbarNav"
+            >
+              <div
+                class="d-flex flex-column align-items-start align-items-lg-end gap-2"
+              >
+                <!-- Üst Bölüm: Arama ve Dil Seçenekleri -->
+                <div
+                  class="d-flex justify-content-end align-items-center top-menu"
+                >
+                  <!-- Arama Kutusu -->
+                  <div class="input-group mr-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text search-button"
+                        ><i class="fas fa-search"></i
+                      ></span>
+                    </div>
+                    <input
+                      type="text"
+                      class="form-control custom-search"
+                      placeholder="Ürün Arama"
+                    />
+                  </div>
+
+                  <!-- Dil Seçenekleri -->
+                  <div class="dropdown language-dropdown">
+                    <a
+                      class="dropdown-toggle"
+                      href="#"
+                      id="navbarDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      <img
+                        src="assets/images/english.png"
+                        alt="English"
+                        style="width: 40px"
+                      />
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#"
+                        ><img
+                          src="assets/images/english.png"
+                          style="width: 40px"
+                      /></a>
+                      <a class="dropdown-item" href="#"
+                        ><img
+                          src="assets/images/turkish.jpg"
+                          alt="Türkçe"
+                          style="width: 40px"
+                      /></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex flex-column flex-lg-row">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link text-uppercase" href="#">Kurumsal</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-uppercase" href="#"
+                        >Ürünlerimiz</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-uppercase" href="#"
+                        >Müşteri Çözümleri</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-uppercase" href="#"
+                        >Temsilcilikler</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-uppercase" href="#"
+                        >Faaliyetlerimiz</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-uppercase" href="#"
+                        >Teknik Servis & Destek</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-uppercase" href="#">İletişim</a>
+                    </li>
+                  </ul>
+                  <div class="header-right-links">
+                    <div class="login-signup">
+                      <a href="#">Giriş</a>
+                      <span>/</span>
+                      <a href="#">Kayıt</a>
+                    </div>
+                    <div class="social-links">
+                      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section class="representation-wrapper">
+      <div class="banner big mb-5">
+        <div class="container">
+          <div class="banner-overlay"></div>
+          <div class="banner-text-small">
+            Yüksek teknolojili ürünler ve yenilikçi çözümlerle müşterilerimizin
+            tam potansiyellerini gerçekleştirmelerini ve iş başarılarını
+            optimize etmelerini sağlıyoruz.
+          </div>
+        </div>
+      </div>
+      <div class="bg-container">
+        <div class="technical-service-container container my-5">
+          <ul
+            class="nav nav-pills mb-3 gap-3 mb-5 justify-content-center"
+            id="pills-tab"
+            role="tablist"
+          >
+            <li class="nav-item" role="presentation">
+              <button
+                class="custom-nav-link nav-link active"
+                id="kagit-endustrisi-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#kagitEndustrisi"
+                type="button"
+                role="tab"
+                aria-controls="pills-home"
+                aria-selected="true"
+              >
+                Kağıt Endüstrisi
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="custom-nav-link nav-link"
+                id="endustriyel-kalie-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#endustriyelKalite"
+                type="button"
+                role="tab"
+                aria-controls="pills-profile"
+                aria-selected="false"
+              >
+                Endüstriyel Kalite Kontrolü
+              </button>
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="kagitEndustrisi"
+              role="tabpanel"
+              aria-labelledby="kagit-endustrisi-tab"
+              tabindex="0"
+            >
+              <div>
+                <div class="related-header mb-5">
+                  <h2>Mikroskoplar</h2>
+                  <div class="related-border"></div>
+                </div>
+                <div class="row col-wrapper">
+                  <div class="col-md-3 left-col-links mb-3 pe-0 pe-md-4">
+                    <div class="mb-4">
+                      <h3 class="links-title">Ürünlerimiz</h3>
+                      <ul class="d-flex flex-column gap-3">
+                        <li
+                          class="main-box d-flex flex-column justify-content-center"
+                        >
+                          <a href="#"
+                            >ASH Teknoloji Digital Görüntüleme ve Ölçüm
+                            Sistemler</a
+                          >
+                        </li>
+                        <li
+                          class="main-box d-flex flex-column justify-content-center"
+                        >
+                          <a href="#">Soptop Premium Mikroplar</a>
+                        </li>
+                        <li
+                          class="main-box d-flex flex-column justify-content-center"
+                        >
+                          <a href="#">Nurugo Micro Digital Mikroskoplar</a>
+                        </li>
+                        <li
+                          class="main-box d-flex flex-column justify-content-center"
+                        >
+                          <a href="#">Dino-Lite Digital El Tipi Mikroskoplar</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="mb-4">
+                      <h3 class="links-title">Filtreleme</h3>
+                      <div class="mb-4">
+                        <h4 class="links-sub-title">Mikroskoplar</h4>
+                        <ul class="d-flex flex-column gap-3">
+                          <li
+                            class="main-box d-flex flex-column justify-content-center"
+                          >
+                            <a href="#"
+                              >ASH Teknoloji Digital Görüntüleme ve Ölçüm
+                              Sistemler</a
+                            >
+                          </li>
+                          <li
+                            class="main-box d-flex flex-column justify-content-center"
+                          >
+                            <a href="#">Soptop Premium Mikroplar</a>
+                          </li>
+                          <li
+                            class="main-box d-flex flex-column justify-content-center"
+                          >
+                            <a href="#">Nurugo Micro Digital Mikroskoplar</a>
+                          </li>
+                          <li
+                            class="main-box d-flex flex-column justify-content-center"
+                          >
+                            <a href="#"
+                              >Dino-Lite Digital El Tipi Mikroskoplar</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="mb-4">
+                        <h4 class="links-sub-title">Markalar</h4>
+                        <ul class="d-flex flex-column gap-3">
+                          <li
+                            class="main-box d-flex flex-column justify-content-center"
+                          >
+                            <a href="#"
+                              >ASH Teknoloji Digital Görüntüleme ve Ölçüm
+                              Sistemler</a
+                            >
+                          </li>
+                          <li
+                            class="main-box d-flex flex-column justify-content-center"
+                          >
+                            <a href="#">Soptop Premium Mikroplar</a>
+                          </li>
+                          <li
+                            class="main-box d-flex flex-column justify-content-center"
+                          >
+                            <a href="#">Nurugo Micro Digital Mikroskoplar</a>
+                          </li>
+                          <li
+                            class="main-box d-flex flex-column justify-content-center"
+                          >
+                            <a href="#"
+                              >Dino-Lite Digital El Tipi Mikroskoplar</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="mb-4">
+                        <h4 class="links-sub-title">Fiyat Aralığı</h4>
+                        <ul class="d-flex flex-column gap-3">
+                          <li
+                            class="main-box d-flex flex-column justify-content-center"
+                          >
+                            <a href="#"
+                              >ASH Teknoloji Digital Görüntüleme ve Ölçüm
+                              Sistemler</a
+                            >
+                          </li>
+                          <li
+                            class="main-box d-flex flex-column justify-content-center"
+                          >
+                            <a href="#">Soptop Premium Mikroplar</a>
+                          </li>
+                          <li
+                            class="main-box d-flex flex-column justify-content-center"
+                          >
+                            <a href="#">Nurugo Micro Digital Mikroskoplar</a>
+                          </li>
+                          <li
+                            class="main-box d-flex flex-column justify-content-center"
+                          >
+                            <a href="#"
+                              >Dino-Lite Digital El Tipi Mikroskoplar</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="mb-4">
+                        <h4 class="links-sub-title">Fırsatlar</h4>
+                        <ul class="d-flex flex-column gap-3">
+                          <li
+                            class="main-box d-flex flex-column justify-content-center"
+                          >
+                            <a href="#"
+                              >ASH Teknoloji Digital Görüntüleme ve Ölçüm
+                              Sistemler</a
+                            >
+                          </li>
+                          <li
+                            class="main-box d-flex flex-column justify-content-center"
+                          >
+                            <a href="#">Soptop Premium Mikroplar</a>
+                          </li>
+                          <li
+                            class="main-box d-flex flex-column justify-content-center"
+                          >
+                            <a href="#">Nurugo Micro Digital Mikroskoplar</a>
+                          </li>
+                          <li
+                            class="main-box d-flex flex-column justify-content-center"
+                          >
+                            <a href="#"
+                              >Dino-Lite Digital El Tipi Mikroskoplar</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-9 right-col-content">
+                    <div class="row">
+                      <div class="col-md-4 mb-3">
+                        <div class="main-box p-0">
+                          <div class="p-3">
+                            <div
+                              class="owl-carousel product-carousel owl-theme"
+                            >
+                              <div class="item">
+                                <img
+                                  src="/assets/images/teleskop-3.png"
+                                  alt="Ürün Görseli"
+                                  class="img-fluid"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="box-content p-0">
+                            <a class="btn btn-primary box-btn">Sepete Ekle</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="main-box p-0">
+                          <div class="p-3">
+                            <div
+                              class="owl-carousel product-carousel owl-theme"
+                            >
+                              <div class="item">
+                                <img
+                                  src="/assets/images/teleskop-3.png"
+                                  alt="Ürün Görseli"
+                                  class="img-fluid"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="box-content p-0">
+                            <a class="btn btn-primary box-btn"
+                              >Gelince Haber Ver</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="main-box p-0">
+                          <div class="p-3">
+                            <div
+                              class="owl-carousel product-carousel owl-theme"
+                            >
+                              <div class="item">
+                                <img
+                                  src="/assets/images/teleskop-3.png"
+                                  alt="Ürün Görseli"
+                                  class="img-fluid"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="box-content p-0">
+                            <p class="mb-2">AG-1 Gem Mikrsokop (Jewellery)</p>
+                            <div
+                              class="d-flex justify-content-center align-items-center pb-3 gap-2"
+                            >
+                              <a
+                                class="btn custom-btn btn-primary-outline"
+                                data-bs-toggle="modal"
+                                data-bs-target="#exampleModal"
+                                >Karşılaştırma</a
+                              >
+                              <a class="btn custom-btn btn-primary">10.000 $</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="endustriyelKalite"
+              role="tabpanel"
+              aria-labelledby="endustriyel-kalie-tab"
+              tabindex="0"
+            >
+              ...
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2
+              class="modal-title content-title primary-color"
+              id="exampleModalLabel"
+            >
+              Ürünleri Karşılaştırma
+            </h2>
+          </div>
+          <div class="modal-body">
+            <p class="h5 primary-color">
+              AG-1 Gem Mikroskop (Jewellery) ürünü karşılaştırma için eklendi.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              data-bs-dismiss="modal"
+              class="btn custom-btn btn-primary-outline"
+            >
+              Karşılaştır
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container-fluid footer">
+        <div class="row">
+          <!-- Logo alanı -->
+
+          <div class="col-md-12 col-sm-12 col-xs-12 col-lg-3 footer-logo">
+            <img src="assets/images/logo.png" alt="Logo" class="img-fluid" />
+          </div>
+
+          <!-- Menü Alanı -->
+          <div class="col-lg-6 col-md-9 col-sm-12 col-xs-12">
+            <div class="row">
+              <div class="footer-menu">
+                <div class="col-md-12">
+                  <div class="row w-100 justify-content-evenly">
+                    <!-- Kurumsal menü -->
+                    <div class="col-lg-3 col-sm-12 col-xs-12">
+                      <h5 class="footer-heading">KURUMSAL</h5>
+                      <ul class="list-unstyled">
+                        <li><a href="#">Yeni Üyelik</a></li>
+                        <li><a href="#">Şifre Hatırlatma</a></li>
+                        <li><a href="#">Sepetim</a></li>
+                        <li><a href="#">İletişim</a></li>
+                        <li><a href="#">Gizlilik Bildirimi</a></li>
+                      </ul>
+                    </div>
+
+                    <!-- İş birliliği menü -->
+                    <div class="col-lg-3 col-sm-12 col-xs-12">
+                      <h5 class="footer-heading">İş Etiği ve KVKK</h5>
+                      <ul class="list-unstyled">
+                        <li><a href="#">Üyelik Giriş</a></li>
+                        <li><a href="#">Kullanıcı Bilgilerim</a></li>
+                        <li><a href="/hakkinda.html">Hakkımızda</a></li>
+                        <li><a href="#">Satış Sözleşmesi</a></li>
+                        <li><a href="#">Yasal Haklar</a></li>
+                      </ul>
+                    </div>
+
+                    <!-- İletişim bilgileri -->
+                    <div class="col-lg-4 col-sm-12 col-xs-12">
+                      <ul class="list-unstyled">
+                        <li class="footer-heading">TEL: +90 123 456 78 90</li>
+                        <li>
+                          <span class="fw-bold">Merkez:</span> Gayrettepe Mah.
+                          Çimen Sok. Girne Apt. No 2/10 34349 Beşiktaş/İstanbul
+                        </li>
+                        <li>
+                          Servis İstasyonu / Kollektif Çalışma Alanı: İstasyon
+                          Mah. Yarış Çıkmazı Sok. No: 1/60 Tuzla/İstanbul
+                        </li>
+                        <li>
+                          Email:
+                          <a href="mailto:ornek@domain.com">ornek@domain.com</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Arama alanı -->
+          <div class="col--lg-3 col-md-3 col-sm-12 col-xs-12">
+            <div class="footer-search">
+              <h6 class="footer-heading">BÜLTENE ABONE OL</h6>
+              <input
+                type="search"
+                class="form-control"
+                placeholder="Arama..."
+              />
+              <input type="button" value="Kaydet" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="bg-primary text-white py-3 footer-bottom">
+        <div class="container">
+          <div class="d-flex justify-content-between align-items-start">
+            <div>
+              <a href="#" class="mx-2"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="mx-2"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="mx-2"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" class="mx-2"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div>
+              <p>Copyright Anka</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap, Font Awesome ve jQuery Bağlantıları -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Owl Carousel JS -->
+    <script src="/assets/lib/OwlCarousel2-2.3.4/docs/assets/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      $(".product-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        items: 1,
+      });
+    </script>
+  </body>
+</html>

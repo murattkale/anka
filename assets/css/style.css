@@ -21,9 +21,9 @@ button {
     padding: 5px 10px;
 }
 
-p {
+/* p {
     margin: 0;
-}
+} */
 
 ul, ol, li {
     list-style: none;
@@ -35,6 +35,230 @@ th {
     font-weight: 600;
 }
 
+img {
+    width: 100%;
+    height: auto;
+}
+
+.btn-primary {
+    background-color: #0f4e9b;
+}
+
+section {
+    margin-bottom: 60px;
+}
+
+.main-box {
+    padding: 10px;
+    -webkit-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.20);
+    -moz-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.20);
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.20);
+    border-radius: 12px;
+    min-height: 46px;
+    background: #fff;
+}
+
+.main-box .box-content {
+    text-align: center;
+}
+
+.main-box a {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.main-box a:hover {
+    color: #0f4e9b;
+}
+
+.custom-box {
+    margin: 0 18px;
+    /* 36px boşluğu iki kutu arasına bölmek için 18px olarak ayarlandı */
+    flex: 1;
+    /* Boxların genişliği otomatik olarak artıp azalsın diye */
+    -webkit-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.20);
+    -moz-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.20);
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.20);
+    border-radius: 12px;
+    background: #fff;
+}
+
+.custom-box-desc {
+    padding: 20px;
+}
+
+.custom-box-desc i {
+    font-size: 72px;
+    color: #729acb;
+}
+
+.custom-box img {
+    width: 100%;
+    /* Görselin tam genişlikte olmasını sağlar */
+    height: auto;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.custom-box-title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.bg-container {
+    background-image: url(/assets/images/anka-logo-bg.png);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: 115% 0%;
+}
+
+.custom-btn {
+    color: #fff;
+    font-weight: 500;
+    border-color: #0f4e9b!important;
+    background-color: #0f4e9b!important;
+    border-radius: 12px;
+    padding: 6px 12px;
+}
+
+.custom-btn:hover {
+    color: #fff!important;
+}
+
+.custom-btn.btn-primary-outline {
+    background-color: #fff!important;
+    color: #0f4e9b!important;
+}
+
+.custom-btn.lg-btn {
+    font-size: 18px;
+    padding: 6px 24px;
+}
+
+.custom-btn.big {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 12px;
+    padding: 10px 18px;
+}
+
+.box-content .box-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 86px;
+}
+
+.box-btn {
+    color: #fff;
+    font-weight: 500;
+    border-color: #0f4e9b!important;
+    background-color: #0f4e9b!important;
+    border-radius: 0 0 12px 12px;
+    padding: 20px 12px;
+    width: 100%;
+}
+
+.main-box .box-btn:hover {
+    color: #fff;
+}
+
+.main-box .box-btn {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.danger-btn {
+    background-color: red!important;
+    color: #fff!important;
+    border-color: red!important;
+}
+
+.form-input-group {
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.20);
+    background-color: #fff;
+}
+
+.form-input-group .input-group-text {
+    color: #0f4e9b;
+    font-weight: 700;
+    background: #fff;
+    border: none;
+}
+
+.form-input-group .form-control {
+    background: #fff;
+    border: none;
+    
+}
+
+.form-input-group .form-control:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.content-title {
+    font-weight: 700;
+    margin: 16px 0px;
+}
+
+.primary-color {
+    color: #0f4e9b;
+}
+
+.col-image {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 40px;
+}
+
+.col-wrapper .left-col-links .links-title {
+    font-weight: 700;
+    color: #0f4e9b;
+    border-bottom: 1px solid #0f4e9b;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+
+.col-wrapper .left-col-links .links-sub-title {
+    font-weight: 500;
+    color: #0f4e9b;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.card-wrapper {
+    position: relative;
+}
+
+.card-wrapper .card-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(15,78,155,.7);
+}
+
+.card-wrapper .card-overlay span {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+}
+
+@media screen and (max-width: 767.98px) {
+    .bg-container {
+        background-image: none;
+        background-size: 100%;
+    }
+}
 
 /*** Header ***/
 header {
@@ -86,12 +310,23 @@ input {
     border-top: 2px solid #0f4e9b;
 }
 
+.language-dropdown .dropdown-menu[data-bs-popper] {
+    top: 100%;
+    right: 0;
+    left: auto;
+    margin-top: var(--bs-dropdown-spacer);
+}
+
 .navbar {
     padding: 0;
 }
 
 .menu-divider {
     border-bottom: 2px solid #f8f9fa;
+}
+
+.section-wrapper {
+    padding: 40px 0;
 }
 
 header .header-menu-wrapper {
@@ -131,8 +366,51 @@ header .header-right-links .social-links {
 
 header .header-right-links .social-links a {
     color: #0f4e9b;
+    padding: 4px;
+    background: #0f4e9b25;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    border-radius: 31px;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.20);
 }
 
+header .header-right-links .social-links a i {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 991.98px) {
+    header .header-menu-wrapper {
+        margin-top: 12px;
+    }
+
+    header .header-menu-wrapper .top-menu {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .header-nav-wrapper {
+        position: relative;
+        padding: 26px 0;
+    }
+
+    .header-nav-wrapper .header-logo-wrapper {
+        position: absolute;
+        right: 0;
+        top: 10px;
+    }
+
+    .header-nav-wrapper .navbar-brand {
+        max-width: 120px;
+    }
+
+    .header-nav-wrapper .mobile-menu-wrapper {
+        width: 100%;
+    }
+}
 
 /*** Footer ***/
 footer {
@@ -182,12 +460,36 @@ footer input[type="button"] {
     position: relative;
     width: 100%;
     height: 240px;
-    /* istediğiniz yüksekliği buradan ayarlayabilirsiniz */
-    background-image: url('https://www.an-ka.com/productimages/108083/big/ex20.jpg');
-    background-size: cover;
-    background-position: center center;
+    background-image: url(https://www.an-ka.com/productimages/108083/big/ex20.jpg);
+    background-size: 500px;
+    background-position: 95%;
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
+}
+
+.banner.big {
+    height: 600px;
+    background-size: 600px;
+    background-position: 95% -30px;
+}
+
+.banner-default.big {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-image: url(/assets/images/banner-bg.png);
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.banner.banner-full-bg {
+    background-image: url(/assets/images/banner-full-bg.png);
+    background-size: 100%;
+    background-position: center;
 }
 
 .banner-overlay {
@@ -196,52 +498,36 @@ footer input[type="button"] {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 0, 0, 0.5);
-    /* Kırmızı renkte %50 şeffaflıkla overlay */
+    background: linear-gradient(90deg, rgba(15,78,155,1) 0%, rgba(15,78,155,1) 23%, rgba(0,249,255,0) 100%);
 }
 
 .banner-text {
     position: relative;
-    margin: 0 0 0 36px;
     color: #fff;
-    font-size: 24px;
-    /* Yazı boyutunu buradan ayarlayabilirsiniz */
     font-weight: bold;
     font-size: 50px;
 }
 
-/*** Boxes ***/
-section {
-    margin-bottom: 100px;
+.banner-text-small {
+    position: relative;
+    color: #fff;
+    width: 64%;
+    font-weight: 500;
+    font-size: 32px;
 }
 
-.custom-box {
-    border: 1px solid #e0e0e0;
-    margin: 0 18px;
-    /* 36px boşluğu iki kutu arasına bölmek için 18px olarak ayarlandı */
-    flex: 1;
-    /* Boxların genişliği otomatik olarak artıp azalsın diye */
-    -webkit-box-shadow: 0px 3px 2px 0px rgba(0, 0, 0, 0.50);
-    -moz-box-shadow: 0px 3px 2px 0px rgba(0, 0, 0, 0.50);
-    box-shadow: 0px 3px 2px 0px rgba(0, 0, 0, 0.50);
-    border-radius: 12px;
-}
+@media screen and (max-width: 767.98px) {
+    .banner.big {
+        height: 300px;
+    }
 
-.custom-box-desc {
-    padding: 20px;
-}
-
-.custom-box img {
-    width: 100%;
-    /* Görselin tam genişlikte olmasını sağlar */
-    height: auto;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-}
-
-.custom-box-title {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    .banner-text-small {
+        position: relative;
+        color: #fff;
+        width: 100%;
+        font-weight: 500;
+        font-size: 20px;
+    }
 }
 
 /** Hakkında **/
@@ -299,7 +585,6 @@ section {
 }
 
 /** Products **/
-
 .product-card {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);  /* Hover üzerinde gölgeyi belirginleştir */
     border-radius: 20px;
@@ -320,10 +605,6 @@ section {
     border-radius: 28px;
 }
 
-.btn-primary {
-    background-color: #0d6efd;
-}
-
 .related-header {
     display: flex;
     align-items: center;
@@ -332,12 +613,15 @@ section {
 .related-border {
     height: 2px;
     flex-grow: 1;
-    background-color: #0d6efd;
+    background-color: #0f4e9b;
     margin-left: 30px;
 }
 
-.related-header h2{
-    color:#0d6efd;
+.related-header h1,
+.related-header h2,
+.related-header h3 {
+    font-weight: 700;
+    color:#0f4e9b;
 }
 
 .card-body ul {
@@ -356,10 +640,6 @@ section {
 }
 
 /** product detail **/
-.product-detail {
-
-}
-
 .product-detail .product-images{
     height: 500px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
@@ -373,11 +653,12 @@ section {
 .product-detail .product-images img{
     border-radius: 32px;
     max-width: 100%;
-    height: 100%;
+    height: 500px;
+    object-fit: contain;
 }
 
 .product-detail--detail h2{
-    color:#0d6efd;
+    color:#0f4e9b;
 }
 
 .product-detail--detail p {
@@ -399,6 +680,27 @@ section {
 
 .product-detail .buttons {
     margin-top: 6rem !important;
+}
+
+.details-table .details-table-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #00000050;
+    padding-bottom: 10px;
+}
+
+.details-table .details-table-row:not(:first-child) {
+    padding-top: 10px;
+}
+
+.details-table .details-table-row span{
+    font-size: 18px;
+}
+
+.details-table .details-table-row .details-table_title{
+    font-size: 20px;
+    font-weight: 700;    
 }
 
 /** Rating **/
@@ -506,13 +808,14 @@ section {
 
 .basket-modal .modal-header h5 {
     display: block;
-    color:#0d6efd;
+    color: #0f4e9b;
     font-size: 24px;
     display: block;
+    font-weight: 700;
 }
 
 .basket-modal .modal-header p {
-    color:#0d6efd;
+    color:#0f4e9b;
     font-size: 14px;
 }
 
@@ -530,9 +833,93 @@ section {
     border-radius: 32px;
     max-width: 100%;
     height: 100%;
+    object-fit: contain;
 }
 
 .basket-modal .modal-content{
     border-radius: 16px;
     padding: 24px;
 }
+
+/** Contact Page START **/
+.contact-container .custom-box .custom-box-title {
+    color: #0f4e9b!important;
+}
+
+.contact-container .contact-content .custom-box .custom-box-desc span {
+    font-size: 18px;
+    font-weight: 500;
+    color: #0f4e9b!important;
+}
+
+.contact-container .contact-maps-wrapper {
+    overflow: hidden;
+}
+
+.contact-container .contact-maps-wrapper .google-map iframe {
+    border-radius: 20px;
+}
+/** Contact Page END **/
+/** Technical Service  START **/
+.fault-notification-wrapper img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.custom-nav-link {
+    background: #fff;
+    color: #0f4e9b;
+}
+
+.custom-nav-link.active {
+    background: #0f4e9b;
+    color: #fff;
+}
+
+.custom-nav-link {
+    font-size: 24px;
+    -webkit-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.20);
+    -moz-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.20);
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.20);
+    border-radius: 12px;
+    background: #fff;
+}
+
+.technical-service-container .technical-col-img {
+    height: 400px;
+    object-fit: cover;
+    border-radius: 40px;
+}
+
+@media screen and (max-width: 767.98px) {
+    .fault-notification-wrapper img {
+        height: 200px;
+        margin-bottom: 20px;
+    }
+
+    .technical-service-container .custom-nav-link {
+        font-size: 18px;
+    }
+ }
+/** Technical Service  END **/
+/** Representation Area START **/
+.representation-wrapper .represention-logo-wrapper .main-box {
+    padding: 20px;
+}
+
+.representation-wrapper .represention-logo-wrapper .main-box img {
+    width: 80%;
+}
+
+.representation-wrapper .representation-content p {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 767.98px) {
+    .representation-wrapper .represention-logo-wrapper .main-box img {
+        width: 50%;
+    }
+}
+/** Representation Area END **/
