@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anasayfa</title>
+
+    <!-- Bootstrap CSS Bağlantısı -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <!-- Owl Carousel -->
+    <link
+      rel="stylesheet"
+      href="/assets/lib/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/assets/lib/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.theme.default.min.css"
+    />
+
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header>
+      <div class="container-fuild">
+        <nav
+          class="header-nav-wrapper navbar navbar-expand-lg navbar-light justify-content-between"
+        >
+          <div class="header-logo-wrapper d-flex w-auto">
+            <!-- Logo -->
+            <a class="navbar-brand m-auto" href="#">
+              <img src="assets/images/logo.png" alt="Logo" />
+            </a>
+          </div>
+          <div class="mobile-menu-wrapper">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Menü Elemanları -->
+            <div
+              class="collapse navbar-collapse header-menu-wrapper"
+              id="navbarNav"
+            >
+              <div
+                class="d-flex flex-column align-items-start align-items-lg-end gap-2"
+              >
+                <!-- Üst Bölüm: Arama ve Dil Seçenekleri -->
+                <div
+                  class="d-flex justify-content-end align-items-center top-menu"
+                >
+                  <!-- Arama Kutusu -->
+                  <div class="input-group mr-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text search-button"
+                        ><i class="fas fa-search"></i
+                      ></span>
+                    </div>
+                    <input
+                      type="text"
+                      class="form-control custom-search"
+                      placeholder="Ürün Arama"
+                    />
+                  </div>
+
+                  <!-- Dil Seçenekleri -->
+                  <div class="dropdown language-dropdown">
+                    <a
+                      class="dropdown-toggle"
+                      href="#"
+                      id="navbarDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      <img
+                        src="assets/images/english.png"
+                        alt="English"
+                        style="width: 40px"
+                      />
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#"
+                        ><img
+                          src="assets/images/english.png"
+                          style="width: 40px"
+                      /></a>
+                      <a class="dropdown-item" href="#"
+                        ><img
+                          src="assets/images/turkish.jpg"
+                          alt="Türkçe"
+                          style="width: 40px"
+                      /></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex flex-column flex-lg-row">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link text-uppercase" href="#">Kurumsal</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-uppercase" href="#"
+                        >Ürünlerimiz</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-uppercase" href="#"
+                        >Müşteri Çözümleri</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-uppercase" href="#"
+                        >Temsilcilikler</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-uppercase" href="#"
+                        >Faaliyetlerimiz</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-uppercase" href="#"
+                        >Teknik Servis & Destek</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-uppercase" href="#">İletişim</a>
+                    </li>
+                  </ul>
+                  <div class="header-right-links">
+                    <div class="login-signup">
+                      <a href="#">Giriş</a>
+                      <span>/</span>
+                      <a href="#">Kayıt</a>
+                    </div>
+                    <div class="social-links">
+                      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <section>
+      <div class="banner banner-home">
+        <div class="container"></div>
+      </div>
+      <div class="first-look-section bg-container">
+        <div class="home-container container my-5">
+          <div class="row col-wrapper">
+            <div class="col-md-6 left-col-links mb-3 p-2 p-lg-5">
+              <img
+                src="assets/images/home/business-concept-with-team.png"
+                alt=""
+              />
+            </div>
+            <div
+              class="col-md-6 right-col-content d-flex flex-column align-items-center justify-content-center"
+            >
+              <div class="">
+                <h1 class="content-title">AN-KA'YA HOŞGELDİNİZ</h1>
+                <p class="fw-semibold mb-4">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Optio a quas repudiandae, cumque praesentium amet? A, autem
+                  consequatur culpa tempora blanditiis optio similique sequi
+                  nemo ea assumenda architecto explicabo officiis.
+                </p>
+                <a class="btn custom-btn" href="#">Daha Fazlası</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="answers-section">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4 mb-3">
+                <div class="card-wrapper">
+                  <img src="/assets/images/tup.png" alt="" />
+                  <div class="card-overlay">
+                    <span>İleri Vakum Çözümleri</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card-wrapper">
+                  <img src="/assets/images/tup.png" alt="" />
+                  <div class="card-overlay">
+                    <span>Laboratuvar Çözümleri</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card-wrapper">
+                  <img src="/assets/images/tup.png" alt="" />
+                  <div class="card-overlay">
+                    <span>Servis ve Mühendislik Çözümleri</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="customer-solutions-section">
+          <div class="customer-solutions-wrapper">
+            <div class="card-overlay"></div>
+            <img
+              class="customer-bg-img"
+              src="assets/images/home/customer-solutions-bg.png"
+              alt=""
+            />
+            <div class="customer-solutions-content">
+              <h2>Müşteri Çözümleri</h2>
+              <a href="#" class="btn custom-btn primary">Daha Fazlası</a>
+            </div>
+          </div>
+        </div>
+        <div class="equipment-section">
+          <div class="container text-center">
+            <span>
+              Vakum Ekipmanları ihtiyaçlarınız ile Kalite Kontrol ve Laboratuvar
+              Süreçlerinizdeki ihtiyaçlarınızı Birlikte İyileştirelim..
+            </span>
+          </div>
+        </div>
+        <div class="statistics-section">
+          <div class="statistics-wrapper">
+            <div class="card-overlay"></div>
+            <img
+              class="customer-bg-img"
+              src="assets/images/home/customer-solutions-bg.png"
+              alt=""
+            />
+            <div class="statistics-content">
+              <div class="row">
+                <div class="col-md-3">
+                  <h4 class="statistic-count">7.263+</h4>
+                  <span class="statistic-info">Gerçekleşen Satış</span>
+                </div>
+                <div class="col-md-3">
+                  <h4 class="statistic-count">7.263+</h4>
+                  <span class="statistic-info">Gerçekleşen Satış</span>
+                </div>
+                <div class="col-md-3">
+                  <h4 class="statistic-count">7.263+</h4>
+                  <span class="statistic-info">Gerçekleşen Satış</span>
+                </div>
+                <div class="col-md-3">
+                  <h4 class="statistic-count">7.263+</h4>
+                  <span class="statistic-info">Gerçekleşen Satış</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sectors-section">
+          <div class="sectors-wrapper container">
+            <div class="title-area text-center">
+              <h2 class="section-title">Sektörler</h2>
+            </div>
+            <div class="row">
+              <div class="col-md-3 mb-3">
+                <div class="card-wrapper">
+                  <img src="/assets/images/tup.png" alt="" />
+                  <div class="card-overlay danger">
+                    <span>Yaşam Bilimleri</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <div class="card-wrapper">
+                  <img src="/assets/images/tup.png" alt="" />
+                  <div class="card-overlay danger">
+                    <span>Yaşam Bilimleri</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <div class="card-wrapper">
+                  <img src="/assets/images/tup.png" alt="" />
+                  <div class="card-overlay danger">
+                    <span>Yaşam Bilimleri</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <div class="card-wrapper">
+                  <img src="/assets/images/tup.png" alt="" />
+                  <div class="card-overlay danger">
+                    <span>Yaşam Bilimleri</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="blogs-section">
+          <div class="blogs-wrapper container">
+            <div class="title-area text-center">
+              <h2 class="section-title">Bloglar</h2>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card border-0 w-auto" style="width: 18rem">
+                  <img
+                    src="/assets/images/home/blog-img.png"
+                    class="card-img-top border-0"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-uppercase">Etkinlikler</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#" class="btn custom-btn">Daha Fazlası</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card border-0 w-auto" style="width: 18rem">
+                  <img
+                    src="/assets/images/home/blog-img.png"
+                    class="card-img-top border-0"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-uppercase">Etkinlikler</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#" class="btn custom-btn">Daha Fazlası</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card border-0 w-auto" style="width: 18rem">
+                  <img
+                    src="/assets/images/home/blog-img.png"
+                    class="card-img-top border-0"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-uppercase">Etkinlikler</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#" class="btn custom-btn">Daha Fazlası</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-section">
+          <div class="contact-wrapper container">
+            <div class="main-box">
+              <div class="row">
+                <div class="col-md-4">
+                  <img
+                    src="assets/images/business-concept-with-team.png"
+                    alt=""
+                  />
+                </div>
+                <div class="contact-content-wrapper col-md-8">
+                  <h2 class="contact-title">Bize Ulaşın</h2>
+                  <div class="input-group main-box mb-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Adınız"
+                      aria-label="Text input with segmented dropdown button"
+                    />
+                  </div>
+                  <div class="input-group main-box mb-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="E-mail"
+                      aria-label="Text input with segmented dropdown button"
+                    />
+                  </div>
+                  <div class="input-group main-box mb-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Telefon"
+                      aria-label="Text input with segmented dropdown button"
+                    />
+                  </div>
+                  <div class="form-floating input-group main-box">
+                    <textarea
+                      class="form-control"
+                      placeholder="Leave a comment here"
+                      id="floatingTextarea2"
+                      style="height: 100px"
+                    ></textarea>
+                    <label for="floatingTextarea2">Comments</label>
+                  </div>
+                  <div class="text-end mt-3">
+                    <a href="#" class="btn custom-btn">Gönder</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="representative-offices-section">
+          <div class="representative-wrapper container">
+            <div class="title-area text-center">
+              <h2 class="section-title">Temsilcilikler</h2>
+              <div class="owl-carousel representative-carousel owl-theme">
+                <div class="item">
+                  <img
+                    src="assets/images/home/carousel-logo.png"
+                    alt="Ürün Görseli"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container-fluid footer">
+        <div class="row">
+          <!-- Logo alanı -->
+
+          <div class="col-md-12 col-sm-12 col-xs-12 col-lg-3 footer-logo">
+            <img src="assets/images/logo.png" alt="Logo" class="img-fluid" />
+          </div>
+
+          <!-- Menü Alanı -->
+          <div class="col-lg-6 col-md-9 col-sm-12 col-xs-12">
+            <div class="row">
+              <div class="footer-menu">
+                <div class="col-md-12">
+                  <div class="row w-100 justify-content-evenly">
+                    <!-- Kurumsal menü -->
+                    <div class="col-lg-3 col-sm-12 col-xs-12">
+                      <h5 class="footer-heading">KURUMSAL</h5>
+                      <ul class="list-unstyled">
+                        <li><a href="#">Yeni Üyelik</a></li>
+                        <li><a href="#">Şifre Hatırlatma</a></li>
+                        <li><a href="#">Sepetim</a></li>
+                        <li><a href="#">İletişim</a></li>
+                        <li><a href="#">Gizlilik Bildirimi</a></li>
+                      </ul>
+                    </div>
+
+                    <!-- İş birliliği menü -->
+                    <div class="col-lg-3 col-sm-12 col-xs-12">
+                      <h5 class="footer-heading">İş Etiği ve KVKK</h5>
+                      <ul class="list-unstyled">
+                        <li><a href="#">Üyelik Giriş</a></li>
+                        <li><a href="#">Kullanıcı Bilgilerim</a></li>
+                        <li><a href="/hakkinda.html">Hakkımızda</a></li>
+                        <li><a href="#">Satış Sözleşmesi</a></li>
+                        <li><a href="#">Yasal Haklar</a></li>
+                      </ul>
+                    </div>
+
+                    <!-- İletişim bilgileri -->
+                    <div class="col-lg-4 col-sm-12 col-xs-12">
+                      <ul class="list-unstyled">
+                        <li class="footer-heading">TEL: +90 123 456 78 90</li>
+                        <li>
+                          <span class="fw-bold">Merkez:</span> Gayrettepe Mah.
+                          Çimen Sok. Girne Apt. No 2/10 34349 Beşiktaş/İstanbul
+                        </li>
+                        <li>
+                          Servis İstasyonu / Kollektif Çalışma Alanı: İstasyon
+                          Mah. Yarış Çıkmazı Sok. No: 1/60 Tuzla/İstanbul
+                        </li>
+                        <li>
+                          Email:
+                          <a href="mailto:ornek@domain.com">ornek@domain.com</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Arama alanı -->
+          <div class="col--lg-3 col-md-3 col-sm-12 col-xs-12">
+            <div class="footer-search">
+              <h6 class="footer-heading">BÜLTENE ABONE OL</h6>
+              <input
+                type="search"
+                class="form-control"
+                placeholder="Arama..."
+              />
+              <input type="button" value="Kaydet" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="bg-primary text-white py-3 footer-bottom">
+        <div class="container">
+          <div class="d-flex justify-content-between align-items-start">
+            <div>
+              <a href="#" class="mx-2"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="mx-2"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="mx-2"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" class="mx-2"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div>
+              <p>Copyright Anka</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap, Font Awesome ve jQuery Bağlantıları -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Owl Carousel JS -->
+    <script src="/assets/lib/OwlCarousel2-2.3.4/docs/assets/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      $(".representative-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        responsive: {
+          0: {
+            items: 1,
+            nav: true,
+          },
+          600: {
+            items: 3,
+            nav: false,
+          },
+          1000: {
+            items: 5,
+            nav: true,
+            loop: true,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
